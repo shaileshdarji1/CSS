@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create navbar using display property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            list-style-type: none;
+            margin: 0;
+            padding-right: 30px;
+            border: 1px solid black;
+            text-align: right;
+            overflow: hidden;
+            direction: rtl;
+        }
+        .nav li{
+            float: right;
+            background-color: blueviolet;
+            width: 70px;
+            border: 1px solid black;
+            text-align: center;
+            height: 24px;
+            font-size: 20px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: greenyellow;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</body>
+</html>

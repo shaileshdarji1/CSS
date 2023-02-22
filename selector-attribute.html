@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Attribute</title>
+    <style>
+        /*
+        1.A[attr].
+        2.A[attr=val].
+        3.A[attr^=val]->start with these value.
+        4.A[attr|=val]->start with these value and contain -(hyphen).
+        5.A[attr$=val]->end with these value.
+        6.A[attr*=val]->contain these value anywhere.
+        7.A[attr~=val]->contain these value anywhere but have space both side.
+        */
+        /* img[title]
+        {
+            border: 2px solid red;
+        }
+        img[alt]
+        {
+            border: 2px solid blue;
+        } */
+        img[src="nature.jpg"]
+        {
+            border: 2px solid red;
+        }
+        img[alt^=na]
+        {
+            border: 2px solid violet;
+        }
+        img[alt|=na]
+        {
+            border: 3px solid green;
+        }
+        img[title$=cat]
+        {
+            border: 3px solid green;
+        }
+       
+        img[title~=of]
+        {
+            border: 4px solid grey;
+        }
+        img[title*=Na]
+        {
+            border: 4px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <img src="nature.jpg" alt="nature pic" height="500px" width="500px"/>
+    <img src="nature.jpg" title="Nature of cat" height="500px" width="500px"/>
+</body>
+</html>
